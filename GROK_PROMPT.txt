@@ -1,0 +1,23 @@
+=== 給 Grok Build 的最精簡 Prompt (直接複製整段傳送) ===
+
+I have already scaffolded the project with Vite + React + Tailwind CSS based on the specs in README.md.
+The core game loop in `src/App.jsx`, question seed in `src/data/initialQuestions.json`, and Web Audio synthesizer in `src/utils/soundPlayer.js` are fully working.
+
+Please build and implement the remaining three modules according to README.md:
+
+1. `src/components/AudienceModal.jsx`:
+   - Realistic animated vertical bar chart modal for "Ask the Audience" (A, B, C, D percentages sum to 100%).
+   - Weighted by question level: early questions give high certainty (70-85%) for the correct answer, while later tiers give divided opinions.
+
+2. `src/components/PhoneModal.jsx`:
+   - A dramatic full-screen 30-second countdown timer modal for a live phone call on stage.
+   - Includes Start, Pause, Reset buttons and integrates `sounds.playTick()` on every second.
+
+3. `src/components/AdminModal.jsx`:
+   - Question management modal accessible via a top gear icon.
+   - Form to add, edit, or delete questions (question text, 4 choices, correct answer index, level).
+   - Export to JSON and Import from JSON buttons (so the church committee can prepare question banks ahead of time).
+   - Mode Toggle: Switch between "Classic 15-tier" and "Custom Tier" (e.g. 8 or 10 questions).
+   - Save modified questions to `localStorage`.
+
+4. Wire these 3 components back into `src/App.jsx` with authentic hexagonal / diamond styled button CSS for the classic TV show look.
