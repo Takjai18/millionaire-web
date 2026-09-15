@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "millionaire-web",
+  "account_id": "c222f6f978d1165d715de0e1d620b19c",
   "compatibility_date": "2026-09-15",
   "assets": {
     "directory": "./dist",
